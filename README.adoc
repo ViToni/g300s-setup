@@ -1,0 +1,11 @@
+= Logitech G300s setup
+
+The software for the Logitech G300s is what people might call sub-optimal to phrase it kindly.
+Adding to the pain I couldn't get the Logitech software to detect my mouse on Mac and on Win10 it doesn't look better.
+Unfortunately there is not much choice when looking for an ambidextrous mouse with more than 3 buttons (there seems to be even less choice for left-handed mouses with more than 3 buttons).
+Fortunately there is this fantastic project named https://github.com/krayon/ratslap[ratslap] which allows configuring all the buttons in any way one would want, as long its HID compliant.
+Combos, eg. `a` + `b` + `c`, are not supported, but that seems to be a restriction of the hardware, not the project.
+
+What might be interesting is that one can combine modifiers on the mouse with keys on the keyboard or the mouse and vice versa.
+For instance changing one button to `Ctrl` and holding it while using the mouse wheel to change the font size / zoom factor.
+Or one button could be set to `Super` and while holding it one could use the cursor keys to change the desktop / windows placement.
