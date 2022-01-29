@@ -13,3 +13,7 @@ Or one button could be set to `Super` and while holding it one could use the cur
 == G300s button layout
 
 image::doc/g300s-schematics.png[G300s button layout, 300]
+
+== Prerequisites
+
+Changing the mouse configuration is CLI based and requires `root` or at least `sudo` permissions to execute the binary.
