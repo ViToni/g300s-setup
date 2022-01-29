@@ -50,3 +50,13 @@ for profile in F{3-5}; do \
         -8 ModeSwitch \
         -9 Button11
 ----
+
+=== Colors
+
+Setup colors, black is default, cyan will be used to indicate Mac mode, red is unused yet
+[source,bash]
+----
+ratslap --modify F3 --color black
+ratslap --modify F4 --color cyan
+ratslap --modify F5 --color red
+----
