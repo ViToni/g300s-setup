@@ -60,3 +60,47 @@ ratslap --modify F3 --color black
 ratslap --modify F4 --color cyan
 ratslap --modify F5 --color red
 ----
+
+== Linux configuration
+
+Configuration:
+
+[%header,cols="^,^,^"]
+|===
+|Left|Middle|Right
+|Button1: +
+(`default`)
+|Button3: +
+(`default`)
+|Button2: +
+(`default`)
+
+|Button5: +
+`LeftAlt` + `Left` +
+(_back_ in history)
+|Button9: +
+`LeftCtrl` + `LeftShift` + `t` +
+(Reopen closed tab)
+|Button7: +
+`LeftAlt` + `Right` +
+(_forward_ in history)
+
+|Button4: +
+`LeftCtrl`
+|Button8: +
+(`default`) +
+(ModeSwitch)
+|Button6: +
+`Super_L` +
+(Gnome will show the "Activities" view)
+|===
+
+[source,bash]
+----
+ratslap --modify F3 \
+ -4 LeftCtrl \
+ -5 LeftAlt+Left \
+ -6 Super_L \
+ -7 LeftAlt+Right \
+ -9 LeftCtrl+LeftShift+t
+----
