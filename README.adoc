@@ -9,3 +9,7 @@ Combos, eg. `a` + `b` + `c`, are not supported, but that seems to be a restricti
 What might be interesting is that one can combine modifiers on the mouse with keys on the keyboard or the mouse and vice versa.
 For instance changing one button to `Ctrl` and holding it while using the mouse wheel to change the font size / zoom factor.
 Or one button could be set to `Super` and while holding it one could use the cursor keys to change the desktop / windows placement.
+
+== G300s button layout
+
+image::doc/g300s-schematics.png[G300s button layout, 300]
