@@ -17,3 +17,36 @@ image::doc/g300s-schematics.png[G300s button layout, 300]
 == Prerequisites
 
 Changing the mouse configuration is CLI based and requires `root` or at least `sudo` permissions to execute the binary.
+
+== Default mapping
+
+Resets all the button mappings and sets up some defaults.
+Most OS won't do anything with buttons higher than Button3.
+But at least these could be remappd using software such as https://karabiner-elements.pqrs.org/[Karabiner] (MacOs), https://www.autohotkey.com/[AutoHotKey] (Windows).
+On Linux the tool depends a bit on desktop environment used and if using X11 or Wayland...
+
+Notable settings:
+
+* DPI ist set to 1000
+* Button8: Cycle through profiles
+
+[source,bash]
+----
+for profile in F{3-5}; do \
+    ratslap --modify "$profile" \
+        --rate 1000 \
+        --D1  250 \
+        --D2  500 \
+        --D3  750 \
+        --D4 1000 \
+        --default-dpi 4 \
+        -1 Button1 \
+        -2 Button2 \
+        -3 Button3 \
+        -4 Button6 \
+        -5 Button7 \
+        -6 Button8 \
+        -7 Button9 \
+        -8 ModeSwitch \
+        -9 Button11
+----
