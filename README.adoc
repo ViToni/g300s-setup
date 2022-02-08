@@ -104,3 +104,47 @@ ratslap --modify F3 \
  -7 LeftAlt+Right \
  -9 LeftCtrl+LeftShift+t
 ----
+
+== MacOS configuration
+
+Configuration:
+
+[%header,cols="^,^,^"]
+|===
+|Left|Middle|Right
+|Button1: +
+(`default`)
+|Button3: +
+(`default`)
+|Button2: +
+(`default`)
+
+|Button5: +
+`Super_L` + `Left` +
+(_back_ in history)
+|Button9: +
+`Super_L`+`LeftShift`+`t`
+(Reopen closed tab)
+|Button7: +
+`Super_L` + `Right` +
+(_forward_ in history)
+
+|Button4: +
+`LeftCtrl`
+|Button8: +
+(`default`) +
+(ModeSwitch)
+|Button6: +
+`LeftCtrl` + `Up` +
+(Show "Mission Control")
+|===
+
+[source,bash]
+----
+ratslap --modify F4 \
+ -4 LeftCtrl \
+ -5 Super_L+Left \
+ -6 LeftCtrl+Up \
+ -7 Super_L+Right \
+ -9 Super_L+LeftShift+t
+----
